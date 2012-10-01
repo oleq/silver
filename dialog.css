@@ -379,7 +379,7 @@ input.cke_dialog_ui_input_password
 {
 	background-color: white;
 	border: none;
-	padding: 0px;
+	padding: 0;
 	width: 100%;
 	height: 14px;
 }
@@ -389,7 +389,7 @@ div.cke_dialog_ui_input_password
 {
 	background-color: white;
 	border: 1px solid #ccc;
-	padding: 3px 0px;
+	padding: 3px 7px;
 
 	border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -479,8 +479,27 @@ a.cke_dialog_ui_button_cancel span
 /* Special class appended to the Ok button. */
 a.cke_dialog_ui_button_ok
 {
+	background: #ecf4c2;
+	background: -moz-linear-gradient(top, #ecf4c2 0%, #d9e980 5%, #bdd921 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ecf4c2), color-stop(5%,#d9e980), color-stop(100%,#bdd921));
 	background: -webkit-linear-gradient(top, #ecf4c2 0%,#d9e980 5%,#bdd921 100%);
+	background: -o-linear-gradient(top, #ecf4c2 0%,#d9e980 5%,#bdd921 100%);
+	background: -ms-linear-gradient(top, #ecf4c2 0%,#d9e980 5%,#bdd921 100%);
+	background: linear-gradient(to bottom, #ecf4c2 0%,#d9e980 5%,#bdd921 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf4c2', endColorstr='#bdd921',GradientType=0 );
 	border: 1px solid #bccb67;
+}
+
+a.cke_dialog_ui_button_ok:hover
+{
+	background: #ecf4c2;
+	background: -moz-linear-gradient(top, #ecf4c2 0%, #bdd921 5%, #bdd921 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ecf4c2), color-stop(5%,#bdd921), color-stop(100%,#bdd921));
+	background: -webkit-linear-gradient(top, #ecf4c2 0%,#bdd921 5%,#bdd921 100%);
+	background: -o-linear-gradient(top, #ecf4c2 0%,#bdd921 5%,#bdd921 100%);
+	background: -ms-linear-gradient(top, #ecf4c2 0%,#bdd921 5%,#bdd921 100%);
+	background: linear-gradient(to bottom, #ecf4c2 0%,#bdd921 5%,#bdd921 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf4c2', endColorstr='#bdd921',GradientType=0 );
 }
 
 a.cke_dialog_ui_button_ok span
@@ -497,8 +516,27 @@ a.cke_dialog_ui_button_ok span
 /* Special class appended to the Cancel button. */
 a.cke_dialog_ui_button_cancel
 {
-	background: -webkit-linear-gradient(top, #999 0%,#444c4f 6%,#32393b 100%);
+	background: #999999;
+	background: -moz-linear-gradient(top, #999999 0%, #444c4f 6%, #32393b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999999), color-stop(6%,#444c4f), color-stop(100%,#32393b));
+	background: -webkit-linear-gradient(top, #999999 0%,#444c4f 6%,#32393b 100%);
+	background: -o-linear-gradient(top, #999999 0%,#444c4f 6%,#32393b 100%);
+	background: -ms-linear-gradient(top, #999999 0%,#444c4f 6%,#32393b 100%);
+	background: linear-gradient(to bottom, #999999 0%,#444c4f 6%,#32393b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#32393b',GradientType=0 );
 	border: 1px solid #2b2b2b;
+}
+
+a.cke_dialog_ui_button_cancel:hover
+{
+	background: #999999;
+	background: -moz-linear-gradient(top, #999999 0%, #32393b 6%, #32393b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999999), color-stop(6%,#32393b), color-stop(100%,#32393b));
+	background: -webkit-linear-gradient(top, #999999 0%,#32393b 6%,#32393b 100%);
+	background: -o-linear-gradient(top, #999999 0%,#32393b 6%,#32393b 100%);
+	background: -ms-linear-gradient(top, #999999 0%,#32393b 6%,#32393b 100%);
+	background: linear-gradient(to bottom, #999999 0%,#32393b 6%,#32393b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#32393b',GradientType=0 );
 }
 
 a.cke_dialog_ui_button_cancel span
@@ -529,13 +567,6 @@ a.cke_dialog_ui_button span.cke_disabled
 	background-color: #c5c5b3;
 }
 
-a.cke_dialog_ui_button:hover,
-a.cke_dialog_ui_button:focus,
-a.cke_dialog_ui_button:active
-{
-	background-position: 0 -1180px;
-}
-
 .cke_hc a.cke_dialog_ui_button:hover,
 .cke_hc a.cke_dialog_ui_button:focus,
 .cke_hc a.cke_dialog_ui_button:active
@@ -555,7 +586,7 @@ a.cke_dialog_ui_button:active
 
 .cke_dialog_footer_buttons span.cke_dialog_ui_button
 {
-	margin: 11px 0;
+	margin: 11px 0 0;
 	text-align: center;
 }
 
