@@ -29,16 +29,38 @@ The visual representation of a rich combo widget looks as follows:
 {
 	display: inline-block;
 	float: left;
-	background: url(images/custom/comboBg.png) repeat-x;
+
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(230,230,230,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(65%,rgba(255,255,255,1)), color-stop(100%,rgba(230,230,230,1)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 65%,rgba(230,230,230,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 65%,rgba(230,230,230,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 65%,rgba(230,230,230,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 65%,rgba(230,230,230,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=1 );
+}
+
+.cke_combo.cke_on
+{
 }
 
 .cke_combo:hover {
-	background: url(images/custom/comboBgHover.png) repeat-x;
+	/*background: url(images/custom/comboBgHover.png) repeat-x;*/
 }
 
 .cke_rtl .cke_combo
 {
 	float: right;
+
+background: rgb(230,230,230);
+background: -moz-linear-gradient(left, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(230,230,230,1)), color-stop(35%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+background: -webkit-linear-gradient(left, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(left, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(left, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 100%);
+background: linear-gradient(to right, rgba(230,230,230,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#ffffff',GradientType=1 );
+
 }
 
 /* The label of the combo widget. It is invisible by default, yet
@@ -66,7 +88,7 @@ The visual representation of a rich combo widget looks as follows:
 	display: inline-block;
 	background: red;
 	float: left;
-	padding: 0 10px 0 12px;
+	padding: 0 0 0 12px;
 	height: 32px;
 	margin: 0;
 	background: url(images/custom/toolEnd.png) right 0px no-repeat;
@@ -84,6 +106,7 @@ a.cke_combo_button:active
 {
 	float: right;
 	background-position: left 0px;
+	padding-right: 12px;
 }
 
 /* A basic support for the high-contrast mode to enhance the readability. */
@@ -110,6 +133,7 @@ a.cke_combo_button:active
 	float: left;
 	cursor: default;
 	text-shadow: 0 1px 0 #fff;
+	font-weight: bold;
 }
 
 .cke_rtl .cke_combo_text
@@ -122,6 +146,7 @@ a.cke_combo_button:active
    It displays the name of the property the combo is responsible for. */
 .cke_combo_inlinelabel
 {
+	font-weight: normal;
 	font-style: italic;
 	color: #aaa;
 }
@@ -141,7 +166,8 @@ a.cke_combo_button:hover .cke_combo_inlinelabel
     height: 33px;
     line-height: 33px;
     margin: 0 0 0 5px;
-    width: 5px;
+    width: 20px;
+    float: right;
 }
 
 .cke_rtl .cke_combo_open
@@ -154,20 +180,19 @@ a.cke_combo_button:hover .cke_combo_inlinelabel
 {
 	margin: 15px 0 0;
 	float: left;
-	opacity: 0.70;
 
 	/* Pure CSS Arrow */
 	height: 0;
 	width: 0;
 	font-size: 0;
-	border-left: 3px solid transparent;
-	border-right: 3px solid transparent;
-	border-top: 3px solid #2f2f2f;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #2f2f2f;
 }
 
 .cke_combo_inlinelabel + .cke_combo_open .cke_combo_arrow
 {
-	border-top-color: #aaa;
+	border-top-color: #888;
 }
 
 a.cke_combo_button:hover .cke_combo_arrow
