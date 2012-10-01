@@ -11,4 +11,4 @@ The idea behind this skin is as follows:
 
 ## Preview
 
-![Silver Skin](/preview/preview.png)
+![Silver Skin](https://raw.github.com/oleq/silver/master/preview/preview.png)
