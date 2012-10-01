@@ -24,7 +24,7 @@ The following is a visual representation of its main elements:
 {
 	margin: 2px 0 0 5px;
 	float: left;
-	color: #a7a7a7;
+	color: #73737C;
 }
 
 /* Each item of the elements path. */
@@ -52,7 +52,7 @@ The following is a visual representation of its main elements:
 a.cke_path_item
 {
 	font-size: 11px;
-	color: #aaa;
+	color: #73737C;
 	text-shadow: 0 1px 0 #fff;
 }
 
@@ -61,5 +61,5 @@ a.cke_path_item:hover,
 a.cke_path_item:focus,
 a.cke_path_item:active
 {
-	color: #777;
+	color: #111;
 }
