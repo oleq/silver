@@ -101,7 +101,7 @@ a.cke_combo_button:active
 	line-height: 33px;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	color: #666666;
+	color: #555;
 	float: left;
 	cursor: default;
 	text-shadow: 0 1px 0 #fff;
@@ -120,7 +120,6 @@ a.cke_combo_button:active
 {
 	font-weight: normal;
 	font-style: italic;
-	color: #aaa;
 }
 
 a.cke_combo_button:hover .cke_combo_inlinelabel
