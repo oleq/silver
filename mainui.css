@@ -81,7 +81,8 @@ Special outer level classes used in this file:
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 
-	background: #D4D2D0;
+	/*background: #D4D2D0;*/
+	background-color: #D9D5D5;
 	overflow: hidden;
 }
 
@@ -137,7 +138,7 @@ Special outer level classes used in this file:
 {
 	outline: 1px solid #e5e5e5;
 	border-top: 1px solid #fff;
-	background-color: #eee;
+	background-color: #EBEBEB;
 }
 
 /* The resizer is the small UI element that is rendered at the bottom right

@@ -140,34 +140,18 @@ CKEDITOR.skin.chameleon = function( editor, part ) {
 
 			cssId + ' .cke_toolbar_end ' +
 			'{' +
-				'background-color:' + colorBrightness( editor.uiColor, 80 ) + ';' +
-				'border-left-color:' + colorBrightness( editor.uiColor, 90 ) + ';' +
-				'border-right-color:' + colorBrightness( editor.uiColor, 90 ) + ';' +
+				'background-color:' + colorBrightness( editor.uiColor, 60 ) + ';' +
+			'}' +
+
+			cssId + ' .cke_combo_open ' +
+			'{' +
+				'border-right-color:' + colorBrightness( editor.uiColor, 60 ) + ';' +
 			'}' +
 
 			cssId + ' .cke_toolbar_separator ' +
 			'{' +
 				'background-color:' + colorBrightness( editor.uiColor, 75 ) + ';' +
-				'border-left-color:' + colorBrightness( editor.uiColor, 90 ) + ';' +
 			'}' +
-
-			cssId + ' .cke_combo_button ' +
-			'{' +
-				'border-right-color:' + colorBrightness( editor.uiColor, 80 ) + ';' +
-			'}' +
-
-			cssId + ' .cke_combo_inlinelabel + .cke_combo_open .cke_combo_arrow ' +
-			'{' +
-			'border-top-color:' + colorBrightness( editor.uiColor, 50 ) + ';' +
-			'}' +
-
-			cssId + ' a.cke_combo_button:hover .cke_combo_arrow ' +
-			'{' +
-				'border-top-color:' + editor.uiColor + ';' +
-			'}' +
-
-
-
 
 			'';
 	}
