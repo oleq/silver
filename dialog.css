@@ -73,7 +73,7 @@ Comments in this file will give more details about each of the above blocks.
 	cursor: move;
 	position: relative;
 	border-bottom: 1px solid #ddd;
-	background: #f1f1f1;
+	background: #EDEDED;
 	height: 33px;
 	line-height: 33px;
 }
@@ -100,7 +100,7 @@ Comments in this file will give more details about each of the above blocks.
 .cke_dialog_footer
 {
 	text-align: right;
-	background-color: #f1f1f1;
+	background-color: #EDEDED;
 	border-top: 1px solid #DEDEDE;
 }
 
@@ -164,9 +164,9 @@ The .cke_dialog_tab_selected class is appended to the active tab.
 {
 	height: 28px;
 	display: block;
-	background: #f1f1f1;
+	background: #E8E8E8;
 	z-index: 2;
-	border-bottom: 1px solid #fff;
+	/*border-bottom: 1px solid #fff;*/
 	outline: 1px solid #dedede;
 }
 
@@ -183,7 +183,7 @@ a.cke_dialog_tab
 	display: inline-block;
 	cursor: pointer;
 	border-right: 1px solid #dedede;
-	border-bottom: 1px solid #dedede;
+	border-bottom: 1px solid #fff;
 	color: #aaa;
 	position: relative;
 	top: -1px;
@@ -211,12 +211,12 @@ a.cke_dialog_tab_selected
 {
 	background-color: #fff;
 	cursor: default;
-	border-top: 2px solid #888;
+	border-top: 3px solid #888;
 	border-bottom: 0px;
 	color: #333;
 	top: 0px;
-	height: 28px;
-	line-height: 28px;
+	height: 27px;
+	line-height: 27px;
 }
 
 .cke_hc a.cke_dialog_tab_selected

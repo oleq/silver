@@ -12,3 +12,8 @@ The idea behind this skin is as follows:
 ## Preview
 
 ![Silver Skin](https://raw.github.com/oleq/silver/master/preview/preview.png)
+
+
+## UI Color Support
+
+![UI Color](https://raw.github.com/oleq/silver/master/preview/uicolor.png)
