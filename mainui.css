@@ -56,8 +56,6 @@ Special outer level classes used in this file:
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	border: 5px solid #eee;
-	/*border-top: 3px solid #999;
-	border-bottom: 3px solid #999;*/
 }
 
 .cke_hc.cke_chrome
@@ -77,13 +75,13 @@ Special outer level classes used in this file:
 
 	/*border-left: 1px solid #e5e5e5;
 	border-right: 1px solid #e5e5e5;*/
-	border: 1px solid #e5e5e5;
+	border: 1px solid #d6d6d6;
 
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 
-	background: #f1f1f1;
+	background: #D4D2D0;
 	overflow: hidden;
 }
 
@@ -123,7 +121,7 @@ Special outer level classes used in this file:
 
 .cke_top
 {
-	background: url(images/custom/toolBg.png) repeat #fff;
+	background: url(images/custom/toolBg.png) repeat transparent;
 	border-bottom: 1px solid #e5e5e5;
 	margin-bottom: -1px;
 	margin-left: -2px;
@@ -139,6 +137,7 @@ Special outer level classes used in this file:
 {
 	outline: 1px solid #e5e5e5;
 	border-top: 1px solid #fff;
+	background-color: #eee;
 }
 
 /* The resizer is the small UI element that is rendered at the bottom right

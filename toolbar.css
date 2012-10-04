@@ -54,7 +54,7 @@ Special outer level classes used in this file:
 {
 	float: left;
 	height: 33px;
-	background: url(images/custom/toolEnd.png) no-repeat left 0px;
+	/*background: url(images/custom/toolEnd.png) no-repeat left 0px;*/
 	margin-right: -3px;
 }
 
@@ -71,6 +71,16 @@ Special outer level classes used in this file:
 {
 	float: left;
 	padding: 5px 8px 5px;
+}
+
+.cke_toolbar_end
+{
+	display: block;
+	height: 32px;
+	width: 1px;
+	background: #ddd;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
 }
 
 .cke_hc .cke_toolgroup

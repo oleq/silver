@@ -29,14 +29,7 @@ The visual representation of a rich combo widget looks as follows:
 {
 	display: inline-block;
 	float: left;
-}
-
-.cke_combo.cke_on
-{
-}
-
-.cke_combo:hover {
-	/*background: url(images/custom/comboBgHover.png) repeat-x;*/
+	border-right: 1px solid #fff;
 }
 
 .cke_rtl .cke_combo
@@ -67,12 +60,12 @@ The visual representation of a rich combo widget looks as follows:
 .cke_combo_button
 {
 	display: inline-block;
-	background: red;
 	float: left;
 	padding: 0 0 0 12px;
 	height: 32px;
 	margin: 0;
-	background: url(images/custom/toolEnd.png) right 0px no-repeat;
+	/*background: url(images/custom/toolEnd.png) right 0px no-repeat;*/
+	border-right: 1px solid #ddd;
 }
 
 /* Different states of the container. */
@@ -88,6 +81,10 @@ a.cke_combo_button:active
 	float: right;
 	background-position: left 0px;
 	padding-right: 12px;
+	padding-left: 0px;
+
+	border-left: 1px solid #ddd;
+	border-right: 0;
 }
 
 /* A basic support for the high-contrast mode to enhance the readability. */
@@ -149,11 +146,14 @@ a.cke_combo_button:hover .cke_combo_inlinelabel
     margin: 0 0 0 5px;
     width: 20px;
     float: right;
+    border-right: 1px solid #fff;
 }
 
 .cke_rtl .cke_combo_open
 {
 	margin: 0 5px 0 0;
+	border-right: 0;
+	border-left: 1px solid #fff;
 }
 
 /* The arrow which is displayed inside of the .cke_combo_open handler. */
@@ -169,6 +169,11 @@ a.cke_combo_button:hover .cke_combo_inlinelabel
 	border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
 	border-top: 4px solid #2f2f2f;
+}
+
+.cke_rtl .cke_combo_arrow
+{
+	float: right;
 }
 
 .cke_combo_inlinelabel + .cke_combo_open .cke_combo_arrow
